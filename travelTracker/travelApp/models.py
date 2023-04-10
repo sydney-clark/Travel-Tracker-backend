@@ -13,3 +13,10 @@ class Travel(models.Model):
     def __str__(self): return self.address
     def __str__(self): return self.contact
 
+class Marker(models.Model):
+    address = models.CharField(max_length=50)
+    latitude = models.CharField(max_length=50)
+    longitude = models.CharField(max_length=50)
+    def __str__(self): return self.address
+    def __str__(self): return self.latitude
+    def __str__(self): return self.longitude
