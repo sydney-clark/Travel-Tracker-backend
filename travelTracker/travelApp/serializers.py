@@ -9,4 +9,4 @@ class TravelSerializer(serializers.ModelSerializer): # serializers.ModelSerializ
 class MarkerSerializer(serializers.ModelSerializer): # serializers.ModelSerializer just tells django to convert sql to JSON
     class Meta:
         model = Marker # tell django which model to use
-        fields = ('id', 'address', 'latitude', 'longitude') # tell django which fields to include
+        fields = ('id', 'lat', 'lng') # tell django which fields to include
